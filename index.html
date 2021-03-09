@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+
+            <form class="d-flex">
+                <input class="form-control me-2 area-busca" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-outline-success btn-busca" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <i class="fas fa-bell alerta"></i>
+
+            <div class="dropdown log-in">
+                <a class="btn dropdown-toggle usuarios" role="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/usuario1.png" class="img-usuario" width="30px">Usuario 1
+                </a>
+                <ul class="dropdown-menu usuarios" aria-labelledby="dropdownMenuButton1">
+                    <li><button class="dropdown-item usuarios menu"><img src="img/usuario2.png" class="img-usuario" width="30px">Usuario
+                            2</button> </li>
+                    <li><button class="dropdown-item usuarios menu"><img src="img/usuario3.png" class="img-usuario" width="30px">Usuario
+                            3</button>
+                    </li>
+                    <li><button class="dropdown-item usuarios menu">Gerenciar Perfis</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button class="dropdown-item usuarios menu">Conta</button></li>
+                    <li><button class="dropdown-item usuarios menu">Central de Ajuda</button></li>
+                    <li><button class="dropdown-item usuarios menu">Sair</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+
+            <div class="container">
+                <h3 class="titulo">NARUTO</h3>
+                <p class="descricao">Naruto Uzumaki, um ninja órfão, leva dentro de si o espírito de um demônio
+                    destrutivo, que o tornou a vergonha de sua cidade. Agora ele quer se tornar o próximo Hokage!
+                    <br>Assista agora todas as temporadas de Naruto.
+                </p>
+                <div class="classificacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    2006 9 Temporadas
+                </div>
+                <div class="botoes">
+                    <a role="button" href="https://youtu.be/uMyuSHewmks" target="_blank" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </a>
+                    <button role="button" class="botao" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <div class="collapse" id="collapseOne">
+                        <div class="accordion-body">
+                            Todos temos que enfrentar os nossos próprios demônios, mas este ninja terá que fazer isso...
+                            literalmente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <p class="minha-lista">Minha Lista <i class="far fa-heart"></i></p>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme " src="img/mini1.jpg" alt="the walking dead">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini5.jpg" alt="yakusoku no neverland">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini2.jpg" alt="the umbrella academy">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini6.jpg" alt="fullmetal alchemist brotherhood">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini9.jpg" alt="dark">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini8.jpg" alt="hunter x hunter">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini3.jpg" alt="alice in borderland">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini4.jpg" alt="death note">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini10.jpg" alt="sherlock">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini7.jpg" alt="inuyasha">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/90f7fb889b.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    <!--boostratp js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+</body>
+
+</html>

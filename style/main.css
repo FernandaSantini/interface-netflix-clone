@@ -1,0 +1,178 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preto) !important;
+    font-family: 'Arial', Times, serif;
+    color: white !important;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+
+header nav {
+    padding-left: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    width: 100%;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/*form busca*/
+.container .d-flex {
+    margin-left: 5%;
+}
+
+.d-flex .area-busca {
+    color: white!important;
+    border-color: var(--vermelho);
+    background-color: rgba(0, 0, 0, .50)!important;
+}
+
+.d-flex .btn-busca {
+    border-color: var(--vermelho);
+    color: var(--vermelho);
+}
+
+.d-flex .btn-busca:hover {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: white;
+}
+
+/*dropdawm menu*/
+.log-in .usuarios {
+    color: #AAA!important;
+    background-color: var(--preto)!important;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.usuarios .img-usuario {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+/*sino alerta*/
+.alerta {
+    padding-left: 10%;
+    padding-right: 1%;
+    cursor: pointer;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/capa.jpg');
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .classificacao {
+    margin-bottom: 5%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao a:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    margin-right: 28%;
+    width: 70%;
+}
+
+.minha-lista {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.accordion-body {
+    color: var(--preto);
+    background-color: white;
+    width: 50%;
+}
+
+.fa-star {
+    color: var(--vermelho);
+}
